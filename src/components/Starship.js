@@ -4,6 +4,7 @@ function Starship ({data}) {
     return(
         <>
         <h1>Starships</h1>
+        <Grid columns={3}>
         {data.map((starships, i) => {
             // console.log(starships);
             return(
@@ -21,6 +22,7 @@ function Starship ({data}) {
                 </Grid.Column>
             )
         })}
+        </Grid>
         </>
     )
 }

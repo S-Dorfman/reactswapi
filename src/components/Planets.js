@@ -5,6 +5,7 @@ function Planets ({data}) {
   return (
     <>
     <h1>Planets</h1>
+    <Grid columns={3}>
     {data.map((planets, i) => {
         // console.log(planets);
         return(
@@ -22,6 +23,7 @@ function Planets ({data}) {
             </Grid.Column>
         )
     })}
+    </Grid>
     </>
   )
 }
